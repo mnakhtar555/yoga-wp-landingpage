@@ -1,0 +1,32 @@
+.fields{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.input_c{
+	width: 50%;
+	float: left;
+}
+.input_c button,
+#upload_instructor_image,
+#upload_price_card_icon,
+#upload_trainer_bg,
+#upload_trainer_img,
+#upload_trainer_texture{
+	background-color: #027fbd;
+	margin: 1rem 0;
+	padding: .5rem 1rem;
+	border: none;
+	color: #ffffff;
+}
+#nakhtar_yoga_class_mb,
+#nakhtar_yoga_starts_mb,
+#nakhtar_yoga_instructor_mb{
+	width: 100%;
+	clear: both;
+}
+#circle_one_num,
+#circle_two_num,
+#circle_three_num{
+	width: 16%;
+}

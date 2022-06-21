@@ -1,0 +1,77 @@
+footer{
+    display: grid;
+    grid-template-columns: repeat( 2, 40%);
+    background-color: $light-bg-cl;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 5rem 0;
+    color: $base-bg-cl;
+
+    @include breakpoint-down(small){
+        grid-template-columns: 1fr;
+        padding-left: 3rem;
+    }
+
+    & .company-info{
+        padding-right: 2rem;
+
+        @include breakpoint-down(small){
+            padding-right: 0;
+        }
+
+        h3{
+            margin: 0;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+        p{
+            width: 70%;
+            text-align: justify;
+
+            @include breakpoint-down(small){
+                width: 90%;
+            }
+        }
+    }
+
+    & .navs{
+        display: grid;
+        grid-template-columns: repeat( 3, 1fr );
+        justify-content: center;
+
+        @include breakpoint-down(small){
+            grid-template-columns: 1fr;
+            margin-bottom: 1rem;
+        }
+
+        & .page-nav, & .service-nav, & .social-links{
+            li:first-child{
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+            li{
+                a{
+                    display: flex;
+                    flex-direction: row;
+                    color: $base-bg-cl;
+                    text-decoration: none;
+                    
+                    i{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        border-radius: 50%;
+                        background-color: $menu-bg-cl;
+                        margin-right: .5rem;
+                        font-size: .8rem;
+                    }
+                }
+
+                
+            }
+        }
+    }
+}

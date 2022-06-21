@@ -1,0 +1,56 @@
+.subscribe{
+    width: 100%;
+    background-color: $base-bg-cl;
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+    text-align: center;
+    color: #ffffff;
+
+    @include breakpoint-down(small){
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    h2{
+        margin-bottom: 0;
+        font-size: 3rem;
+        text-transform: uppercase;
+
+        @include breakpoint-down(small){
+            width: 60%;
+            margin: 0 auto;
+            font-size: 2rem;
+        }
+    }
+    p{
+        width: 35%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+
+        @include breakpoint-down(small){
+            width: 80%;
+        }
+    }
+    input{
+        width: 30%;
+        padding: .5rem;
+        border: none;
+        border-radius: 2rem;
+    }
+    button{
+        width: 10%;
+        margin-left: -5rem;
+        padding: .5rem;
+        border: none;
+        border-radius: 2rem;
+        color: $base-bg-cl;
+        font-size: .8rem;
+        text-transform: uppercase;
+
+        @include breakpoint-down(small){
+            width: 25%;
+            margin-left: -2rem;
+        }
+    }
+}

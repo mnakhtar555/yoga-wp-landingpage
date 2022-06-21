@@ -1,0 +1,105 @@
+.class{
+    background-color: $base-bg-cl;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+
+    h2{
+        margin-bottom: .3rem;
+        color: #ffffff;
+        font-size: 4rem;
+        text-transform: uppercase;
+
+        @include breakpoint-down(small){
+            font-size: 2rem;
+        }
+    }
+    p{
+        width: 45%;
+        margin-top: .5rem;
+        margin-right: auto;
+        margin-left: auto;
+        color: #ffffff;
+        font-size: 1.5rem;
+        font-weight: 300;
+        font-family: 'Tahoma';
+
+        @include breakpoint-down(small){
+            width: 70%;
+            font-size: 1rem;
+        }
+    }
+    & .class-options{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 90%;
+        margin: 10rem auto auto auto;
+        padding-bottom: 5rem;
+
+        @include breakpoint-down(small){
+            grid-template-columns: 1fr;
+            padding-bottom: 3rem;
+        }
+
+        & .card{
+            position: relative;
+            margin-top: 2rem;
+
+            @include breakpoint-down(small){
+                margin-top: 0;
+            }
+            
+            & .model-pic,
+            & .bg-texture{
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate( -50%, -50% );
+            }
+
+            & .model-pic{
+                width: 280px;
+                height: 280px;
+                z-index: 2;
+                border-radius: 50%;
+
+                @include breakpoint-down(small){
+                    width: 225px;
+                    height: 225px;
+                }
+            }
+
+            & .bg-texture{
+                width: 380px;
+                height: 380px;
+
+                @include breakpoint-down(small){
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+
+            h3{
+                margin-top: 11rem;
+                margin-bottom: 0;
+                color: #ffffff;
+                font-size: 2rem;
+                text-transform: uppercase;
+
+                @include breakpoint-down(small){
+                    margin-top: 9rem;
+                }
+            }
+            p{
+                margin-top: .3rem;
+                color: #ffffff;
+                font-size: 1rem;
+            }
+        }
+        & .card:not(:last-child){
+            @include breakpoint-down(small){
+                margin-bottom: 10rem;
+            }
+        }
+    }
+}
